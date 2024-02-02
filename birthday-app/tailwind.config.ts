@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      width: {
+        mobile: "360px", // 手機版寬度
+      },
+      height: {
+        mobile: "620px", // 手機版高度
+      },
+      colors: {
+        kirbo:'#f9a8d4'
+      },
     },
   },
   plugins: [],
