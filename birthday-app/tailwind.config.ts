@@ -20,7 +20,8 @@ const config: Config = {
         mobile: "620px", // 手機版高度
       },
       colors: {
-        kirbo:'#f9a8d4'
+        kirbo:'#f9a8d4',
+        ruu:'#ACD6FF',
       },
     },
   },
