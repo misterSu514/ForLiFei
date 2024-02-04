@@ -2,6 +2,11 @@
 "use client";
 import React from 'react';
 import Stage1 from './stage1';
+import Stage2 from './stage2';
+import Stage3 from './stage3';
+import Stage4 from './stage4';
+import Stage5 from './stage5';
+import Stage6 from './stage6';
 
 const SelectStage = ({ stage_idx=1 ,nextStage=()=>{}}) => {
   let stage;
@@ -11,12 +16,23 @@ const SelectStage = ({ stage_idx=1 ,nextStage=()=>{}}) => {
       stage = <Stage1 nextStage={nextStage}/>;
       break;
     case 2:
-      stage = <div>test2</div>;
+      stage = <Stage2 nextStage={nextStage}/>;
       break;
     case 3:
-      stage = <div>test3</div>;
+      stage = <Stage3 nextStage={nextStage}/>;
       break;
-    // ... 可以添加更多的 case，視你的需求而定
+    case 4:
+        stage = <Stage4 nextStage={nextStage}/>;
+        break;
+    case 5:
+        stage = <Stage5 nextStage={nextStage}/>;
+        break;
+    case 6:
+        stage = <Stage6 nextStage={nextStage}/>;
+        break;
+        
+            
+
     default:
       stage = <></>;
   }

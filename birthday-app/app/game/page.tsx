@@ -24,7 +24,7 @@ export default function Home() {
             {/* 題目區域 */}
             <div className='h-full w-full'>
                 <div className='font-mono text-2xl font-bold ml-1 mb-1'> Question {stage} </div>
-                <div className='flex items-center justify-center mt-10 h-auto'>
+                <div className='flex items-center justify-center mt-2 h-auto'>
                     <SelectStage stage_idx={stage} nextStage={nextStage}/>
                 </div>
                 <button onClick={()=>{let new_stage = stage + 1; setStage(new_stage)}}> click</button>
