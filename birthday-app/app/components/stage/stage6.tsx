@@ -33,7 +33,7 @@ export default function Stage6({nextStage=()=>{}}) {
             <div className='font-bold font-mono text-lg'>霏豬豬最喜歡蘇豬豬的哪裡?</div>
             <div className='flex flex-wrap w-full justify-center'>       
                 <input type="text" ref={InputRef}  className="mt-2 w-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="嗯嗯嗯" required />
-                <img src={img_path} className='mt-4' onClick={()=>{
+                <img src={img_path} className='mt-4 w-1/2' onClick={()=>{
                     let cur_cnt = count + 1;
                     if(cur_cnt == 3)
                         correct();

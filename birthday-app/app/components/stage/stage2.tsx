@@ -2,7 +2,6 @@
 "use client";
 import SoundImage from '../SoundImage';
 import React, { useState,useEffect } from 'react';
-import { TuiDatePicker } from 'nextjs-tui-date-picker';
 
 export default function Stage2({nextStage=()=>{}}) {
    
